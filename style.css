@@ -1,0 +1,303 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+html{
+	font-size: 62.5%;
+	font-family: 'Linux Libertine',serif,sans-serif
+}
+:root{
+	--blue-color:#36c;
+	--blue-background:#447ff5;
+	--gray-border-color: #a2a9b1;
+	--gray-text-color: #54595d;
+	--gray-background-color: #f8f9fa;
+	--gray-color: #72777d;
+	--gray-color-border:#c8ccd1;
+}
+/********HEADER*******/
+header{
+	text-align: center;
+	margin-top: 40px;
+}
+header h1 {
+	font-size: 2.3rem;
+	line-height: 4.3rem;
+	font-weight: normal;
+}
+header h1 span{
+	font-size: 3.5rem;
+}
+header p{
+	font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+/******MAIN*******/
+main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1.7rem 0 1rem;
+	/*min-width: 310px;*/
+}
+.main {
+	display:flex;
+	justify-content: center;
+	position: relative;
+	width: 90%;
+	height: 30rem;
+	min-width: 600px;
+	/*margin:0 auto;*/
+}
+.main .main__languages{
+	position: absolute;
+	/*font-size: 1.5rem;*/
+	text-align: center;
+	font-family: "Segoe UI";
+	line-height: 1.8rem;
+}
+.main .main__languages a{
+	text-decoration: none;
+	font-size: 1.5rem
+}
+.main__languages a strong{
+	color: var(--blue-color);
+}
+.main .main__languages p{
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: var(--gray-text-color)
+}
+.main .main__languages:nth-of-type(1){
+	top: 0;
+	right: 60%;
+}
+.main .main__languages:nth-of-type(2){
+	top: 0;
+	left: 60%;
+}
+.main .main__languages:nth-of-type(3){
+	top: 20%;
+	right: 65%;
+}
+.main .main__languages:nth-of-type(4){
+	top: 20%;
+	left: 65%;
+}
+.main .main__languages:nth-of-type(5){
+	top: 40%;
+	right: 67%;
+}
+.main .main__languages:nth-of-type(6){
+	top: 40%;
+	left: 67%;
+}
+.main .main__languages:nth-of-type(7){
+	top: 60%;
+	right: 65%;
+}
+.main .main__languages:nth-of-type(8){
+	top: 60%;
+	left: 65%;
+}
+.main .main__languages:nth-of-type(9){
+	top: 80%;
+	right: 60%;
+}
+.main .main__languages:nth-of-type(10){
+	top: 80%;
+	left: 60%;
+}
+.main .main__logo{
+	position: absolute;
+	top: 18%;
+}
+/*********SECTION SEARCH*********/
+.main__search{
+	width: 430px;
+	margin: 2rem auto;
+}
+.main__search .main__search-container{
+	display: flex;
+	justify-content: flex-start;
+	/*border: 1px solid var(--gray-border-color);
+	border-radius: 2px;*/
+}
+.main__search-form{
+	display: flex;
+	width: 100%;
+	border: 1px solid var(--gray-color-border);
+	border-radius: 2px;
+	border-right: none;
+}
+.main__search-form:hover{
+	border-color: var(--gray-color);
+}
+
+.main__search .main__search-container input{
+	height: 43px;
+	width: 100%;
+	border: none;
+	outline: none;
+	margin-left: 10px;
+}
+.main__search-select {
+	display: flex;
+	padding-right: 10px;
+}
+.main__search-select select, .main__search-container button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.main__search-select select{
+	color: var(--gray-text-color);
+}
+.main__search-container .main__search-container-button{
+	width: 15%;
+	background-color: var(--blue-color);
+	border-radius: 0 2px 2px 0;
+}
+.main__search-container .main__search-container-button:hover{
+	background-color: var(--blue-background);
+	border-color: var(--blue-background);
+}
+.main__search-container .main__search-container-button span{
+	background-image: url("./assets/icons/search.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 10px;
+}
+/*********SECTION SELECT*********/
+
+.main__select{
+	display: flex;
+	margin: 3rem auto 3rem;
+	width: 430px;
+	justify-content: center;
+}
+.main__select .main__select-option{
+	border: 1px solid var(--gray-color-border);
+	width: 45%;
+	margin: 0 13px;
+	padding: 7px;
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-around;
+}
+.main__select .main__select-option i{
+	background-color: var(--blue-color);
+	padding: 7px 11px;
+}
+.main__select .main__select-option label{
+	font-size: 1.3rem;
+	font-family: "Segoe UI";
+	font-weight: bold;
+	color: var(--blue-color);
+}
+.main__select .main__select-option select{
+	border:none;
+	outline: none;
+	color: var(--blue-background);
+}
+.main__select hr{
+	/*border: 0.5px solid var(--gray-border-color);*/
+	flex-grow: 1;
+	align-self: center;
+	height: 0;
+	color: var(--gray-color-border);
+}
+/******FOOTER******/
+footer{
+	border-top: 0.5px solid var(--gray-color-border);
+	margin: 0 10px;
+	display: flex;
+	padding: 30px;
+}
+
+.footer__description{
+	display: inherit;
+	flex-direction: column;
+	width: 35%;
+}
+.footer__description .footer__description-1{
+	display: inherit;
+	height: 30%;
+	margin-bottom: 15px;
+}
+.footer__description .footer__description-1 div{
+	width: 42px;
+	height: 42px;
+	background-color: black;
+}
+.footer__description .footer__description-1 p{
+	font-size: 1.5rem;
+	width: 85%;
+	padding: 0 10px;
+}
+.footer__description .footer__description-2{
+	display: inherit;
+}
+.footer__description .footer__description-2 .fd2__img{
+	width: 42px;
+	height: 42px;
+	background-color: black;
+}
+.footer__description-2 .footer__description-21{
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+}
+.footer__description-2 .footer__description-21 h3{
+	/*font-size: 1.5rem;*/
+	margin-bottom: 15px;
+}
+.footer__description-2 .footer__description-21 p{
+	font-size: 1.5rem;
+}
+.footer__description-2 .footer__description-21 .fd21__img{
+	display: inherit;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10px;
+	max-width: 215px;
+}
+.footer__description-2 .footer__description-21 img{
+
+    width: 105px;
+    height: 30px;
+    background-color: black;
+
+}
+.footer__options{
+	display: flex;
+	flex-wrap: wrap;
+	width: 65%;
+}
+.footer__options .footer__options-sec{
+	width: 33.3%;
+	height: 55px;
+	display: inherit;
+	position: relative;
+	margin-bottom: 17px;
+}
+.footer__options-sec .footer__options-sec-img{
+	width: 42px;
+    height: 42px;
+    background-color: black;
+}
+.footer__options-sec .footer__options-sec-des{
+	display: inherit;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.footer__options-sec .footer__options-sec-des h2{
+	margin-bottom: 5px;
+}
+.footer__options-sec .footer__options-sec-des p{
+	font-size: 1.5rem;
+}
